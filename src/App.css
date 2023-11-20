@@ -1,38 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul li{list-style: none;}
+
 .App {
+  max-width: 55rem;
   text-align: center;
+  margin: 1rem auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  margin: 0 0 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__news-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.app__news-menu {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__news-menu span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: grey;
+}
+
+.news-list {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.news {
+  list-style-type: circle;
+  text-align: left;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.currency-list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.ad__image {
+  border: 1px solid grey;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.search {
+  margin: 0 0 3rem;
+}
+
+.seach__block {
+  display: flex;
+}
+
+.search__form {
+  flex-grow: 1;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search__field {
+  flex-grow: 1;
+}
+
+.search__input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid grey;
+  border-radius: 7px;
+}
+
+.search__button {
+  padding: 0.5rem 1rem;
+}
+
+.banner {
+  width: 100%;
+  height: 8rem;
+  border: 1px solid grey;
+  margin: 0 0 3rem;
+}
+
+.widgets-block {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.widget__title {
+  margin: 0 0 1rem;
 }
